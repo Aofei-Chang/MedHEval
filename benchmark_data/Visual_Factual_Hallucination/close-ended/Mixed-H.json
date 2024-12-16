@@ -14,19 +14,6 @@
     },
     {
         "img_name": "xmlab102/source.jpg",
-        "question": "Does the image show signs of lung cancer?",
-        "answer": "Yes",
-        "hallucination_type": "type_3",
-        "question_type": "binary",
-        "choices": "",
-        "img_id": 102,
-        "qid": 1,
-        "location": "Lung",
-        "modality": "CT",
-        "source": "SLAKE"
-    },
-    {
-        "img_name": "xmlab102/source.jpg",
         "question": "Is there a presence of pneumothorax in the image?",
         "answer": "No",
         "hallucination_type": "type_3",
@@ -86,19 +73,6 @@
         "choices": "",
         "img_id": 103,
         "qid": 6,
-        "location": "Abdomen",
-        "modality": "CT",
-        "source": "SLAKE"
-    },
-    {
-        "img_name": "xmlab103/source.jpg",
-        "question": "Is the abnormality in the lung indicative of lung cancer?",
-        "answer": "Yes",
-        "hallucination_type": "type_3",
-        "question_type": "binary",
-        "choices": "",
-        "img_id": 103,
-        "qid": 7,
         "location": "Abdomen",
         "modality": "CT",
         "source": "SLAKE"
@@ -387,6 +361,19 @@
         "qid": 29,
         "location": "Lung",
         "modality": "X-Ray",
+        "source": "SLAKE"
+    },
+    {
+        "img_name": "xmlab102/source.jpg",
+        "question": "Does the image show signs of lung cancer?",
+        "answer": "Yes",
+        "hallucination_type": "type_3",
+        "question_type": "binary",
+        "choices": "",
+        "img_id": 102,
+        "qid": 1,
+        "location": "Lung",
+        "modality": "CT",
         "source": "SLAKE"
     },
     {
@@ -10799,6 +10786,19 @@
         "img_id": 90,
         "qid": 830,
         "location": "Lung",
+        "modality": "CT",
+        "source": "SLAKE"
+    },
+    {
+        "img_name": "xmlab103/source.jpg",
+        "question": "Is the abnormality in the lung indicative of lung cancer?",
+        "answer": "Yes",
+        "hallucination_type": "type_3",
+        "question_type": "binary",
+        "choices": "",
+        "img_id": 103,
+        "qid": 7,
+        "location": "Abdomen",
         "modality": "CT",
         "source": "SLAKE"
     },
