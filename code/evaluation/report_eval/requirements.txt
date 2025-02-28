@@ -1,0 +1,16 @@
+allennlp==1.1.0
+allennlp_models==1.1.0
+beautifulsoup4==4.8.1
+bert-score==0.3.12
+fast-bleu==0.0.90
+lxml
+numpy==1.18.2
+pandas==1.0.1
+python-Levenshtein
+optuna>=2.1.0
+scikit-learn==0.22.1
+statsmodels==0.13.0
+torch==1.6.0
+tqdm==4.38.0
+transformers==3.0.1
+tokenizers==0.8.0-rc4
