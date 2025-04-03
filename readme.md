@@ -2,10 +2,6 @@
 
 Welcome to the official repository for **MedHEval**, a benchmark designed to systematically evaluate hallucinations and mitigation strategies in Medical Large Vision-Language Models (Med-LVLMs).
 
-Sure! Here are a few versions of your paper title **with emojis**, depending on the tone you're going for:
-
-
-Let me know the vibe you're going for — academic but engaging, more fun, or minimal and sleek?
 ---
 
 ## Overview
