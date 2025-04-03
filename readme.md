@@ -73,7 +73,7 @@ MedHEval consists of the following key components:
 - **🛠️ Evaluation of Hallucination Mitigation Strategies**  
   Benchmarked techniques include diverse mitigation methods focusing on visual bias or LLM bias:
   - [**OPERA**](https://github.com/shikiw/OPERA)  
-  - [**VCD** (Visual Chain of Thought Decoding)](https://github.com/DAMO-NLP-SG/VCD)  
+  - [**VCD**](https://github.com/DAMO-NLP-SG/VCD)  
   - [**DoLa**](https://github.com/voidism/DoLa)  
   - [**AVISC**](https://github.com/sangminwoo/AvisC)  
   - **M3ID**  [M3ID Paper](https://arxiv.org/abs/2403.14003)

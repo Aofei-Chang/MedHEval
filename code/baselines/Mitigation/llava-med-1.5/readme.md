@@ -12,7 +12,7 @@ Please follow the setup instructions provided in the following folder to configu
 We provide implementations (or integrations) for the following hallucination mitigation methods:
 
 - [**OPERA**](https://github.com/shikiw/OPERA)  
-- [**VCD** (Visual Chain of Thought Decoding)](https://github.com/DAMO-NLP-SG/VCD)  
+- [**VCD**](https://github.com/DAMO-NLP-SG/VCD)  
 - [**DoLa**](https://github.com/voidism/DoLa)  
 - [**AVISC**](https://github.com/sangminwoo/AvisC)  
 - **M3ID**  
