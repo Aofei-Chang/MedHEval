@@ -20,3 +20,6 @@ We provide the code for evaluation under folder: `code/evaluation/`, with a corr
 For data generation, the code is organized by data sources and hallucination types, as each source and type require distinct processing methods.
 
 - Please find the relevant code in the folder: `code/data_generation`
+
+## Environment
+
