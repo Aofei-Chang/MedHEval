@@ -36,11 +36,10 @@ MedHEval/
 │       ├── open_ended_evaluation/  # Knowledge hallucination (open-ended)
 │       └── report_eval/            # Visual hallucination evaluation from generated reports
 │
-├── scripts/                        # Setup and utility scripts
 └── README.md
 ```
 
-Each component includes its own README with detailed instructions.
+Each component may include its own README with detailed instructions.
 
 ---
 
@@ -92,16 +91,22 @@ cd MedHEval
 
 ### 2. Install Dependencies
 
+MedHEval supports a **modular** and **flexible** setup. You can selectively evaluate any Med-LVLM and any hallucination type.
+
+
 #### Baseline Models Setup
-Each Med-LVLM has its own requirements. Follow the official or customized instructions for environment setup and model checkpoints:
+
+Please refer to the links below for the environment setup corresponding to the model you wish to evaluate. Some baseline models, such as LLM-CXR, may involve complex installation steps. In such cases, we recommend setting up the environment according to the official instructions and downloading the required model checkpoints. Once the environment is ready, you can run inference using our implementation provided under `./code/baselines/(Med)-LVLMs/`.
+
+Each Med-LVLM has specific requirements. Please follow the official or customized setup instructions accordingly, including environment configuration and model checkpoint preparation.
 
 - [LLaVA-Med](https://github.com/microsoft/LLaVA-Med/tree/v1.0.0)
-- [LLaVA-Med-1.5](https://github.com/microsoft/LLaVA-Med)
+- [LLaVA-Med-1.5](https://github.com/microsoft/LLaVA-Med) -- We provide our customized environment setup and implementation, which includes modifications to the transformers package for hallucination mitigation baselines. Please refer to the corresponding folder [`code/baselines/(Med)-LVLMs/llava-med-1.5`](https://github.com/Aofei-Chang/MedHEval/tree/main/code/baselines/Med-LVLMs/llava-med-1.5) for detailed instructions.
 - [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
 - [LLM-CXR](https://github.com/hyn2028/llm-cxr)
-- [CheXagent](https://github.com/Stanford-AIMI/CheXagent) *(use via HuggingFace Transformers)*
+- [CheXagent](https://github.com/Stanford-AIMI/CheXagent) *(Note: use via HuggingFace Transformers)* This model can be loaded directly via Hugging Face transformers as no model and training codes are provided in their official repo. No special environment setup is needed beyond installing torch and transformers. We use the same environment as LLaVA-Med-1.5.
 - [RadFM](https://github.com/chaoyi-wu/RadFM)
-- [XrayGPT](https://github.com/mbzuai-oryx/XrayGPT) *(MiniGPT-4 environment)*
+- [XrayGPT](https://github.com/mbzuai-oryx/XrayGPT) *(Note: MiniGPT-4 environment)* This model shares the same structure and environment setup as MiniGPT-4.
 
 Each model’s folder under `code/baselines/(Med)-LVLMs/` contains:
 - Inference scripts
@@ -109,14 +114,15 @@ Each model’s folder under `code/baselines/(Med)-LVLMs/` contains:
 - Notes for modified packages (e.g., `transformers`)
 
 #### Evaluation Modules
+Note: The setup is separate from the (Med)-LVLMs and does not require installing the full environment of any specific Med-LVLM.
 
-- **Close-ended evaluation**: Lightweight and model-agnostic  
+- **Close-ended evaluation**: Lightweight, easy to use and model-agnostic  
   → [`code/evaluation/close_ended_evaluation`](https://github.com/Aofei-Chang/MedHEval/tree/main/code/evaluation/close_ended_evaluation)
 
-- **Open-ended (Report)**: Requires older Python/tooling  
+- **Open-ended (Report)**: This setup is more involved, as some tools depend on older versions of Python and other packages.  
   → [`code/evaluation/report_eval`](https://github.com/Aofei-Chang/MedHEval/tree/main/code/evaluation/report_eval)
 
-- **Open-ended (Knowledge)**: Lightweight (just needs `langchain`, `pydantic`, and LLM API access)  
+- **Open-ended (Knowledge)**: This setup is straightforward. Required packages: `langchain`, `pydantic`, and access to an LLM (e.g., Claude 3.5 Sonnet used in our experiments).  
   → [`code/evaluation/open_ended_evaluation`](https://github.com/Aofei-Chang/MedHEval/tree/main/code/evaluation/open_ended_evaluation)
 
 ---
@@ -128,7 +134,7 @@ The `benchmark_data/` folder includes annotation and split files.
 
 - [Slake](https://www.med-vqa.com/slake/)
 - [VQA-RAD](https://osf.io/89kps/files/osfstorage)
-- [IU-Xray](https://drive.google.com/file/d/1c0BXEuDy8Cmm2jfN0YYGkQxFZd2ZIoLg/view)
+- [IU-Xray](https://drive.google.com/file/d/1c0BXEuDy8Cmm2jfN0YYGkQxFZd2ZIoLg/view), as provided by [R2GenGPT](https://github.com/wang-zhanyu/R2GenGPT)
 - [MIMIC-CXR](https://physionet.org/content/mimic-cxr-jpg/2.0.0/)
 
 ---
