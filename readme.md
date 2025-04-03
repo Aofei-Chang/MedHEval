@@ -69,14 +69,18 @@ MedHEval consists of the following key components:
   MedHEval supports a broad range of models, including:
   - Generalist models (e.g., LLaVA, MiniGPT-4)
   - Medical-domain models (e.g., LLaVA-Med, LLM-CXR, CheXagent)
-  - Retrieval-augmented or hybrid architectures
 
 - **🛠️ Evaluation of Hallucination Mitigation Strategies**  
-  Benchmarked techniques include:
-  - Vision-text alignment tuning
-  - Retrieval-augmented generation
-  - Confidence calibration
-  - Prompt-based and ensemble approaches
+  Benchmarked techniques include diverse mitigation methods focusing on visual bias or LLM bias:
+  - [**OPERA**](https://github.com/shikiw/OPERA)  
+  - [**VCD** (Visual Chain of Thought Decoding)](https://github.com/DAMO-NLP-SG/VCD)  
+  - [**DoLa**](https://github.com/voidism/DoLa)  
+  - [**AVISC**](https://github.com/sangminwoo/AvisC)  
+  - **M3ID**  [M3ID Paper](https://arxiv.org/abs/2403.14003)
+    _(No official code released; implementation follows AVISC.)_  
+  - **DAMRO**  
+    _(No official code released; implemented by ourself based on the paper: [DAMRO Paper](https://arxiv.org/abs/2410.04514))_  
+  - [**PAI**](https://github.com/LALBJ/PAI)
 
 ---
 
