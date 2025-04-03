@@ -23,4 +23,3 @@ For data generation, the code is organized by data sources and hallucination typ
 
 ## Environment
 
-eee
