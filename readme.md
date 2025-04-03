@@ -114,7 +114,7 @@ Each model’s folder under `code/baselines/(Med)-LVLMs/` contains:
 - Notes for modified packages (e.g., `transformers`)
 
 #### Evaluation Modules
-Note: The setup is separate from the (Med)-LVLMs and does not require installing the full environment of any specific Med-LVLM.
+Note: The setup is separate from the (Med)-LVLMs and does not require installing the full environment of any specific Med-LVLM. Refer to [`code/evaluation`](https://github.com/Aofei-Chang/MedHEval/tree/main/code/evaluation) for how to set up environments and how to run the evaluations.
 
 - **Close-ended evaluation**: Lightweight, easy to use and model-agnostic  
   → [`code/evaluation/close_ended_evaluation`](https://github.com/Aofei-Chang/MedHEval/tree/main/code/evaluation/close_ended_evaluation)
