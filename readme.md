@@ -1,6 +1,8 @@
 # 💭🤖 MedHEval: Benchmarking Hallucinations and Mitigation Strategies in Medical Large Vision-Language Models 🏥📊
 
-Welcome to the official repository for **MedHEval**, a benchmark designed to systematically evaluate hallucinations and mitigation strategies in Medical Large Vision-Language Models (Med-LVLMs).
+📄 **Paper**: [MedHEval on arXiv](https://arxiv.org/abs/2503.02157)  
+🧠 **What’s inside?** A comprehensive suite of evaluation tools, (Med)-LVLMs, curated datasets, and implementations of hallucination mitigation baselines for several Med-LVLMs.
+
 
 ---
 
