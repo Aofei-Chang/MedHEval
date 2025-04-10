@@ -50,13 +50,13 @@ Each component may include its own README with detailed instructions.
 MedHEval classifies hallucinations into three interpretable types:
 
 1. **Visual Misinterpretation**  
-   Misunderstanding or inaccurate reading of visual input (e.g., identifying a fracture that doesn’t exist).
+   Misunderstanding or inaccurate reading of visual input (e.g., identifying a lesion that doesn’t exist).
 
 2. **Knowledge Deficiency**  
-   Errors stemming from gaps or inaccuracies in medical knowledge (e.g., incorrect drug-disease associations).
+   Errors stemming from gaps or inaccuracies in medical knowledge (e.g., incorrect visual feature-disease associations).
 
 3. **Context Misalignment**  
-   Failure to align visual understanding with textual prompts (e.g., answering unrelated to the question).
+   Failure to align visual understanding with medical contexts (e.g., answering without considering the medical history).
 
 ---
 
