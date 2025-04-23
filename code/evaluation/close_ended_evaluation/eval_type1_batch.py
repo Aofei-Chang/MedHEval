@@ -11,16 +11,16 @@ root_path = r"/data/aofei/hallucination"
 
 if __name__ == "__main__":
 
-    #load the original data
-    slake_ori_path = f"{root_path}/Slake/slake_qa_pairs.json"
+    #load the original data. please download the VQA data files from our repo in dir "medheval/benchmark_data/Visual_Misinterpretation_Hallucination/close-ended/fine-grained"
+    slake_ori_path = f"{root_path}/slake_qa_pairs.json"
     with open(slake_ori_path, 'r') as file:
         slake_ori = json.load(file)
         
-    rad_ori_path = f"{root_path}/VQA_RAD/rad_vqa_pairs.json"
+    rad_ori_path = f"{root_path}/rad_vqa_pairs.json"
     with open(rad_ori_path, 'r') as file:
         rad_ori = json.load(file)
 
-    xray_ori_path = f"{root_path}/IU_Xray/xray_closed_pairs.json"
+    xray_ori_path = f"{root_path}/xray_closed_pairs.json"
     with open(xray_ori_path, 'r') as file:
         xray_ori = json.load(file)
         
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     for i in xray_ori:
         xray_id_to_ori[i['qid']] = i
 
-    mimic_ori_path = f"{root_path}/mimic_cxr/inference_close1/mimic_cxr_closed_pairs.json"
+    mimic_ori_path = f"{root_path}/mimic_cxr_closed_pairs.json"
     with open(mimic_ori_path, 'r') as file:
         mimic_ori = json.load(file)
     mimic_id_to_ori = dict()    
